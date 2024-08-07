@@ -39,9 +39,12 @@ The dataset is comprised of news articles that need to be classified into catego
 
 Files used:
 anime.csv: This file contains information about the anime content, including aspects such as the id, name, genre, type, number of episodes (if applicable), an average rating based on views, and the number of members in the anime 'group'.
+
 training.csv: This file contains user ratings of the anime titles.
+
 test.csv: This file will be used to create the rating predictions and must be submitted for grading.
 Purpose
+
 The purpose of this project is to develop a robust and reliable recommendation system for anime using collaborative and content-based filtering methods.
 
 Let me know if you'd like me to make any changes!
@@ -68,8 +71,10 @@ conda create --name <env>
 ```bash
 # activate the virtual environment
 conda activate <env>
+
 # install the pip package
 conda install pip
+
 # install the requirements for this project
 pip install -r requirements.txt
 ```
@@ -94,13 +99,14 @@ In its own words:
 
 ##### Description of files
 
-Public Streamlit Repo with application: https://github.com/PrishaniK/OA1_Classification_Project_Streamlit_Repo
+Public Streamlit Repo with application: https://github.com/PrishaniK/MM3_annimme_recommender_Project_Streamlit_Repo
 Link to Streamlit application: 
+
 For this repository, we are only concerned with a single file:
 
 | File Name              | Description                       |
 | :--------------------- | :--------------------             |
-| `base_app.py`          | Streamlit application definition. |
+| `app.py`               | Streamlit application definition. |
 The Streamlit Repo additionally has the pickled models used in the app, the pickled vectoriser and the test.csv 
 ## Usage Instructions
 
@@ -125,9 +131,11 @@ As a first step to becoming familiar with our web app's functioning, we recommen
 
 - Navigate to the base of your repo where your base_app.py is stored, and start the Streamlit app.
 
+
  ```bash
- cd 2401FTDS_Classification_Project/Streamlit/
- streamlit run base_app.py
+ cd MM3-animme-recommnender-dashboard/Streamlit/
+
+ streamlit run app.py
  ```
 
  If the web server was able to initialise successfully, the following message should be displayed within your bash/terminal session:
